@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AddProduct_2B</string>
+    <string name="product_name_input">Product Name Input</string>
+    <string name="label_for_total_price">Label for Total Price</string>
+    <string name="_99_9">99.9</string>
+    <string name="labtop">labtop</string>
+    <string name="product_quentity_input">product Quentity input</string>
+    <string name="_6">6</string>
+    <string name="product_price_input">product price input</string>
+    <string name="_40">40</string>
+</resources>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.products.addProducts.AddProductActivity">
+
+    <TextView
+        android:id="@+id/AddProductActivity_txtview_addProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add product"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/AddProductActivity_txtview_productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Name :"
+        android:paddingRight="25dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@id/AddProductActivity_txtview_addProduct"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <EditText
+        android:id="@+id/AddProductActivity_edittext_productName"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/shape"
+        android:inputType="text"
+        android:contentDescription="@string/product_name_input"
+        android:hint="@string/labtop"
+        android:paddingLeft="20dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@id/AddProductActivity_txtview_addProduct"
+        app:layout_constraintLeft_toRightOf="@id/AddProductActivity_txtview_productName"
+        />
+
+    <TextView
+        android:id="@+id/AddProductActivity_txtview_productQuentity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Quentity :"
+        android:textSize="17sp"
+        android:paddingRight="10dp"
+        android:contentDescription="@string/label_for_total_price"
+        android:hint="@string/_99_9"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/AddProductActivity_txtview_productName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <EditText
+        android:id="@+id/AddProductActivity_edittext_productQuentity"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:contentDescription="@string/product_quentity_input"
+        android:hint="@string/_6"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toBottomOf="@id/AddProductActivity_edittext_productName"
+        app:layout_constraintLeft_toRightOf="@id/AddProductActivity_txtview_productQuentity"
+        />
+
+    <TextView
+        android:id="@+id/AddProductActivity_txtview_productPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" price  :"
+        android:textSize="17sp"
+        android:paddingRight="25dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/AddProductActivity_txtview_productQuentity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <EditText
+        android:id="@+id/AddProductActivity_edittext_productprice"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:contentDescription="@string/product_price_input"
+        android:hint="@string/_40"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toBottomOf="@id/AddProductActivity_edittext_productQuentity"
+        app:layout_constraintLeft_toRightOf="@id/AddProductActivity_txtview_productQuentity"
+        />
+
+    <TextView
+        android:id="@+id/AddProductActivity_txtview_totalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" total price: "
+        android:textSize="17sp"
+        android:paddingRight="4dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/AddProductActivity_txtview_productPrice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <EditText
+        android:id="@+id/AddProductActivity_edittext_totalprice"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape"
+        android:inputType="numberDecimal"
+        android:contentDescription="@string/label_for_total_price"
+        android:hint="@string/_99_9"
+        android:paddingLeft="18dp"
+        app:layout_constraintTop_toBottomOf="@id/AddProductActivity_edittext_productprice"
+        app:layout_constraintLeft_toRightOf="@id/AddProductActivity_txtview_totalPrice"
+        />
+
+
+    <TextView
+        android:id="@+id/AddProductActivity_txtview_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" you shoul add product"
+        android:textSize="15sp"
+        android:textColor="#FF0000"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/AddProductActivity_txtview_totalPrice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        />
+
+    <Button
+        android:id="@+id/AddProductActivity_button_add"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#3f3bf5"
+        android:text="add "
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/AddProductActivity_txtview_totalPrice"
+        />
+
+    <Button
+        android:id="@+id/AddProductActivity_button_show"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#3f3bf5"
+        android:text="show"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/AddProductActivity_txtview_totalPrice"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
